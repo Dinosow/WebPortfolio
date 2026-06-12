@@ -54,7 +54,7 @@ nav{
 .nav-links a{
     text-decoration:none;
     color:#000000;
-    transition:.3s;
+    transition:all .4s ease;
     position:relative;
 }
 
@@ -70,7 +70,7 @@ nav{
     width:0;
     height:2px;
     background:#ff4fa2;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .nav-links a:hover::after{
@@ -92,7 +92,7 @@ nav{
     border:1px solid #ff4fa2;
     padding:12px 25px;
     border-radius:30px;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .resume-btn:hover{
@@ -169,7 +169,7 @@ nav{
     text-decoration:none;
     padding:15px 35px;
     border-radius:40px;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .primary-btn:hover,
@@ -184,7 +184,7 @@ nav{
     text-decoration:none;
     padding:15px 35px;
     border-radius:40px;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 
@@ -256,7 +256,7 @@ nav{
     border:1px solid #ff4fa2;
     border-radius:20px;
     text-align:center;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .stat-card:hover{
@@ -304,7 +304,7 @@ nav{
     border:1px solid #ff4fa2;
     border-radius:20px;
     padding:30px;
-    transition:.3s;
+    transition:all .4s ease;
     cursor:pointer;
 }
 
@@ -357,7 +357,7 @@ nav{
     border-radius:20px;
     overflow:hidden;
     background:#fff;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .project-card:hover{
@@ -432,7 +432,7 @@ nav{
     border-radius:20px;
     padding:30px;
     background:#fff;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .certificate-card:hover{
@@ -491,7 +491,7 @@ nav{
     padding:30px;
     text-align:center;
     background:#fff;
-    transition:.3s;
+    transition:all .4s ease;
 }
 
 .contact-card:hover{
@@ -505,7 +505,7 @@ nav{
     margin-bottom:10px;
 }
 
-.contact-card p{
+.contact-card a{
     color:#555;
     word-break:break-word;
 }
@@ -520,6 +520,19 @@ nav{
     border-top:1px solid rgba(255,79,162,.2);
     color:#000000;
     background-color: #fcfcfc;
+}
+
+/* SCROLL ANIMATIONS */
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
 /* MOBILE */

@@ -315,7 +315,9 @@
 
         <div class="contact-card">
             <h3>Email</h3>
-            <p>karensolanobarra@gmail.com</p>
+            <a href="mailto:karensolanobarra@gmail.com">
+                 karensolanobarra@gmail.com
+            </a>
         </div>
 
         <div class="contact-card">
@@ -330,17 +332,23 @@
 
         <div class="contact-card">
             <h3>GitHub</h3>
-            <p>https://github.com/Dinosow</p>
+            <a href="https://github.com/Dinosow">
+                 https://github.com/Dinosow
+            </a>
         </div>
 
         <div class="contact-card">
             <h3>LinkedIn</h3>
-            <p>www.linkedin.com/in/karen-solano-9a73483a9</p>
+            <a href="www.linkedin.com/in/karen-solano-9a73483a9">
+                 www.linkedin.com/in/karen-solano-9a73483a9
+            </a>
         </div>
 
         <div class="contact-card">
             <h3>Facebook</h3>
-            <p>facebook.com/yourprofile</p>
+            <a href="facebook.com/yourprofile">
+                 facebook.com/yourprofile
+            </a>
         </div>
 
     </div>
@@ -351,38 +359,7 @@
     <p>© 2026 Carenderya. All Rights Reserved.</p>
 </footer>
 
-    <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-links a");
-
-    window.addEventListener("scroll", () => {
-
-        let current = "";
-
-        sections.forEach(section => {
-
-            const sectionTop = section.offsetTop - 150;
-
-            if(window.scrollY >= sectionTop){
-                current = section.getAttribute("id");
-            }
-
-        });
-
-        navLinks.forEach(link => {
-
-            link.classList.remove("active");
-
-            if(link.getAttribute("href") === `#${current}`){
-                link.classList.add("active");
-            }
-
-        });
-
-    });
-
-    window.dispatchEvent(new Event("scroll"));
-    </script>
+<script src="script.js"></script>
 
 </body>
 </html>
