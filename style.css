@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background:#ffffff;
+    background:#fffdfc;
     color:#000000;
     min-height:100vh;
     padding-top:100px;
@@ -41,7 +41,7 @@ nav{
 .logo{
     font-size:1.6rem;
     font-weight:700;
-    color:#000;
+    color:#6D1F33;
 }
 
 
@@ -59,7 +59,7 @@ nav{
 }
 
 .nav-links a:hover{
-    color:#ff4fa2;
+    color:#6D1F33;
 }
 
 .nav-links a::after{
@@ -69,7 +69,7 @@ nav{
     bottom:-5px;
     width:0;
     height:2px;
-    background:#ff4fa2;
+    background:#6D1F33;
     transition:all .4s ease;
 }
 
@@ -78,7 +78,7 @@ nav{
 }
 
 .nav-links a.active{
-    color:#ff4fa2;
+    color:#490000;
     font-weight:600;
 }
 
@@ -89,82 +89,82 @@ nav{
 .resume-btn{
     text-decoration:none;
     color:rgb(0, 0, 0);
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     padding:12px 25px;
     border-radius:30px;
     transition:all .4s ease;
 }
 
 .resume-btn:hover{
-    background:#ff4fa2;
+    background:#6D1F33;
 }
 
-/* HERO */
+/* ===================================
+   HERO
+=================================== */
 
 .hero{
-    min-height:85vh;
+    min-height: calc(100vh - 100px);
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    padding:0 8%;
 }
 
-.profile-img{
-    width:230px;
-    height:230px;
-    border-radius:50%;
-    object-fit:cover;
-
-    border:4px solid #ff4fa2;
-
-    box-shadow:
-        0 0 20px rgba(255,79,162,.4),
-        0 0 60px rgba(255,79,162,.2);
-
-    margin-bottom:30px;
+.hero-content {
+    max-width: 760px;
+    position: relative;
+    z-index: 2;
 }
 
-.greeting{
-    color:#ff4fa2;
-    font-size:1rem;
-    margin-bottom:10px;
+.hero-greeting {
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(109, 31, 51, 0.08);
+    color: #6D1F33;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
-.hero h1{
-    font-size:4rem;
-    font-weight:800;
-    margin-bottom:10px;
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-.hero h1 span{
-    color:#ff4fa2;
+.highlight {
+    color: #6D1F33;
 }
 
-.hero h2{
-    font-weight:400;
-    color:#000000;
-    margin-bottom:20px;
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #64748b;
+    margin-bottom: 1.5rem;
 }
 
-.description{
-    max-width:650px;
-    color:#000000;
-    line-height:1.8;
-    margin-bottom:35px;
-    font-size:1.05rem;
+.hero p {
+    max-width: 620px;
+    margin: 0 auto 2rem;
+    line-height: 1.9;
+    color: #475569;
+    font-size: 1.05rem;
 }
 
 .hero-buttons{
     display:flex;
+    justify-content: center;
     gap:15px;
     flex-wrap:wrap;
 }
 
 .primary-btn,
 .secondary-btn{
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     color:#000000;
     text-decoration:none;
     padding:15px 35px;
@@ -174,12 +174,12 @@ nav{
 
 .primary-btn:hover,
 .secondary-btn:hover{
-    background:#ff4fa2;
+    background:#6D1F33;
     color:white;
 }
 
 .secondary-btn{
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     color:#000000;
     text-decoration:none;
     padding:15px 35px;
@@ -189,8 +189,50 @@ nav{
 
 
 .secondary-btn:hover{
-    background:#ff4fa2;
+    background:#6D1F33;
 }
+
+/* Decorative background shapes */
+
+.hero-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.08;
+    z-index: 1;
+}
+
+.shape-one {
+    width: 300px;
+    height: 300px;
+    background: #6D1F33;
+    top: -100px;
+    left: -100px;
+}
+
+.shape-two {
+    width: 220px;
+    height: 220px;
+    background: #6D1F33;
+    bottom: -80px;
+    right: -80px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 6% 80px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+}
+
 
 /* ABOUT SECTION */
 
@@ -210,7 +252,7 @@ nav{
     width:350px;
     border-radius:25px;
 
-    border:3px solid #ff4fa2;
+    border:3px solid #6D1F33;
 
     box-shadow:
     0 0 20px rgba(255,79,162,.2),
@@ -222,7 +264,7 @@ nav{
 }
 
 .section-tag{
-    color:#ff4fa2;
+    color:#6D1F33;
     font-weight:600;
     letter-spacing:2px;
     margin-bottom:15px;
@@ -235,7 +277,7 @@ nav{
 }
 
 .about-right h2 span{
-    color:#ff4fa2;
+    color:#6D1F33;
 }
 
 .about-right p{
@@ -253,14 +295,14 @@ nav{
 
 .stat-card{
     padding:20px 30px;
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     border-radius:20px;
     text-align:center;
     transition:all .4s ease;
 }
 
 .stat-card:hover{
-    background:#ff4fa2;
+    background:#6D1F33;
     color:white;
     transform:translateY(-5px);
 }
@@ -301,7 +343,7 @@ nav{
 
 .skill-card{
     background:#fff;
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     border-radius:20px;
     padding:30px;
     transition:all .4s ease;
@@ -310,7 +352,7 @@ nav{
 
 .skill-card:hover{
     transform:translateY(-8px);
-    background:#ff4fa2;
+    background:#6D1F33;
     color:white;
     box-shadow:0 10px 30px rgba(255,79,162,.3);
 }
@@ -353,7 +395,7 @@ nav{
 }
 
 .project-card{
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     border-radius:20px;
     overflow:hidden;
     background:#fff;
@@ -392,7 +434,7 @@ nav{
 }
 
 .tech-stack span{
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     padding:8px 14px;
     border-radius:30px;
     font-size:.85rem;
@@ -428,7 +470,7 @@ nav{
 }
 
 .certificate-card{
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     border-radius:20px;
     padding:30px;
     background:#fff;
@@ -438,7 +480,7 @@ nav{
 .certificate-card:hover{
     transform:translateY(-8px);
     box-shadow:0 10px 30px rgba(255,79,162,.25);
-    background:#ff4fa2;
+    background:#6D1F33;
     color:white;
 }
 
@@ -486,16 +528,16 @@ nav{
 }
 
 .contact-card{
-    border:1px solid #ff4fa2;
+    border:1px solid #6D1F33;
     border-radius:20px;
     padding:30px;
     text-align:center;
     background:#fff;
-    transition:all .4s ease;
+    
 }
 
 .contact-card:hover{
-    background:#ff4fa2;
+    background:#6D1F33;
     color:white;
     transform:translateY(-8px);
     box-shadow:0 10px 30px rgba(255,79,162,.25);
