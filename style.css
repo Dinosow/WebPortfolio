@@ -335,6 +335,10 @@ nav{
     line-height:1.8;
 }
 
+.skills-header h2 span{
+    color:#6D1F33
+}
+
 .skills-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -533,7 +537,19 @@ nav{
     padding:30px;
     text-align:center;
     background:#fff;
-    
+    transition:all .4s ease;
+}
+
+.contact-card:hover{
+    background:#6D1F33;
+    color:white;
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(255,79,162,.25);
+}
+
+.contact-card a{
+    color:inherit;
+    word-break:break-word;
 }
 
 .contact-card:hover{
@@ -545,11 +561,6 @@ nav{
 
 .contact-card h3{
     margin-bottom:10px;
-}
-
-.contact-card a{
-    color:#555;
-    word-break:break-word;
 }
 
 .contact-card:hover p{
@@ -578,8 +589,7 @@ nav{
 }
 
 /* MOBILE */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
     nav{
         flex-direction:column;
@@ -592,8 +602,16 @@ nav{
         justify-content:center;
     }
 
+    .hero{
+        padding:120px 6% 80px;
+    }
+
     .hero h1{
         font-size:2.7rem;
+    }
+
+    .hero h2{
+        font-size:1.2rem;
     }
 
     .profile-img{
