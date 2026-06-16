@@ -1,4 +1,31 @@
+// ===================================
+// Mobile Nav Toggle
+// ===================================
+
+const navToggle = document.getElementById("navToggle");
+const navLinksEl = document.getElementById("navLinks");
+
+if (navToggle && navLinksEl) {
+
+    navToggle.addEventListener("click", () => {
+        const isOpen = navLinksEl.classList.toggle("open");
+        navToggle.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    // Close menu after tapping a link
+    navLinksEl.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinksEl.classList.remove("open");
+            navToggle.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+        });
+    });
+}
+
+// ===================================
 // Active Navbar Highlight
+// ===================================
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
